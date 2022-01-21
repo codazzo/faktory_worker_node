@@ -135,8 +135,11 @@ export class Client {
    * @return {Promise.<Client>} resolves when a connection is opened
    */
   async connect(): Promise<Client> {
+    console.log("----------> connect");
     const conn = await this.connectionFactory.create();
+    console.log("----------> created");
     await this.connectionFactory.destroy(conn);
+    console.log("----------> destroyed");
     return this;
   }
 
