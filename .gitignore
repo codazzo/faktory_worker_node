@@ -39,6 +39,5 @@ jspm_packages
 !.env.test
 
 .DS_Store
-lib
 
 issues
